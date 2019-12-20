@@ -4,7 +4,7 @@ public class StructList {
     private String directions;
     private String disclaimer;
     private String description;
-    private Double listPrice;
+    private String listPrice;
     private String primary_photo;
     private Double lat;
     private Double lng;
@@ -34,11 +34,11 @@ public class StructList {
         this.description = description;
     }
 
-    public Double getListPrice() {
+    public String getListPrice() {
         return listPrice;
     }
 
-    public void setListPrice(Double listPrice) {
+    public void setListPrice(String listPrice) {
         this.listPrice = listPrice;
     }
 

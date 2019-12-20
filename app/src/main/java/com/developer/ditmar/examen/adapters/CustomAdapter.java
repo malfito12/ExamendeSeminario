@@ -1,6 +1,7 @@
 package com.developer.ditmar.examen.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +14,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.developer.ditmar.examen.Data.StructList;
 import com.developer.ditmar.examen.R;
+import com.developer.ditmar.examen.ui.DetailFragment;
 
 import java.util.ArrayList;
 
 public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
+    private Button enterbtn;
     private ArrayList<StructList> list;
     private Context context;
     public CustomAdapter (Context context, ArrayList<StructList> list) {
@@ -59,5 +62,6 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
+        enterbtn.setOnClickListener(this);
     }
 }

@@ -58,10 +58,10 @@ public class ListFragment extends Fragment {
                         StructList item = new StructList();
                         item.setId(obj.getString("_id"));
                         item.setDescription(obj.getString("description"));
-                        item.setDirections(obj.getString("directions"));
-                        item.setDisclaimer(obj.getString("disclaimer"));
+                        item.setDirections(obj.getString("disclaimer"));
+                        item.setDisclaimer(obj.getString("directions"));
                         item.setLat(obj.getDouble("lat"));
-                        item.setListPrice(obj.getDouble("listPrice"));
+                        item.setListPrice(obj.getString("listPrice"));
                         item.setLng(obj.getDouble("listPrice"));
                         item.setPrimary_photo(obj.getString("primary_photo"));
                         listdata.add(item);
